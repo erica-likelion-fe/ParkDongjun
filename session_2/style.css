@@ -1,0 +1,59 @@
+h3 {
+    color: palevioletred;
+}
+
+.hello {
+    color: red;
+}
+
+.box {
+    width: 500px;
+    height: 100px;
+    background-color: whitesmoke;
+}
+
+.box p {
+    position: relative;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    line-height: normal;
+}
+
+.box-with-fonts {
+    width: 50dvw;
+    height: 50dvw;
+    background-color: rgba(0, 0, 0, 0.707)
+}
+
+.box-with-fonts p {
+    position: relative;
+    text-align: left;
+    top: 50%;
+    left: 10%;
+    font-size: calc(10dvw);
+    transform: translateY(-50%);
+    line-height: normal;
+    color: white;
+
+    font-family: Pretendard, Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    font-style: italic;
+}
+
+#block {
+    padding: 10px;
+    border: 1px solid;
+}
+
+#inline {
+    padding: 10px;
+    border: 2px dotted red;
+}
+
+#flexbox {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    
+}
