@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            background: rgb(49,49,49);
+            color: white;
+            color-scheme: dark;
+
+            padding: 20px;
+        }
+
+        .block {
+            border: rgb(195, 195, 195) dotted 5px;
+            padding: 10px;
+        }
+
+        .card {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .card-header {
+            background-color: rgba(255, 255, 255, 0.5);
+            padding: 10px;
+        }
+
+        .card-body {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 10px;
+        }
+
+        .card-footer {
+            background-color: rgba(255, 255, 255, 0.5);
+            padding: 10px;
+        }
+
+        .border-box {
+            box-sizing: border-box;
+            width: 100px;
+            height: 100px;
+            border: 5px solid red;
+            padding: 10px;
+        }
+
+        .dotted-hr {
+            border: none;
+            border-top: 10px dotted white;
+            color: white;
+            margin: 30px;
+        }
+
+        .cat-table td {
+            padding: 10px;
+        }
+
+        .dialogue-bubble {
+            position: relative;
+            background-color: white;
+            color: black;
+            border-radius: 20px;
+            padding: 10px;
+        }
+
+        .dialogue-bubble p {
+            margin: 15px;
+        }
+
+        .dialogue-tail {
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-left: 20px solid transparent;
+            border-right: 20px solid transparent;
+            border-top: 20px solid white;
+            bottom: 10px;
+            left: -15px;
+        }
+        
+        .container-flex {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .box {
+            border: 2px solid white;
+            border-radius: 10px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="block">나는 블록</div>
+
+    <div class="card">
+        <div class="card-header">카드 헤더</div>
+        <div class="card-body">카드 바디</div>
+        <div class="card-footer">카드 푸터</div>
+    </div>
+
+    <div class="border-box">
+        <p>border-box</p>
+    </div>
+
+    <hr class="dotted-hr">
+
+    <table class="cat-table">
+        <tr>
+            <td>
+                <img src="https://i.giphy.com/ztisqLhP99tVSHG136.webp" alt="고양이" style="width: 100px;">
+            </td>
+            <td>
+                <div class="dialogue-bubble">
+                    <p>안녕</p>
+                    <div class="dialogue-tail"></div>
+                </div>
+            </td>
+        </tr>
+    </table>
+
+    <hr class="dotted-hr">
+
+    <h3 style="text-align: center;">justify-content: space-around</h3>
+
+    <div class="container-flex" style="justify-content: space-around;">
+        <div class="box">
+            <span>box1</span>
+        </div>
+        <div class="box">
+            <span>box2</span>
+        </div>
+        <div class="box">
+            <span>box3</span>
+        </div>
+    </div>
+
+    <h3 style="text-align: center;">justify-content: space-around</h3>
+
+    <div class="container-flex" style="justify-content: space-around;">
+        <div class="box">
+            <span>box1</span>
+        </div>
+        <div class="box">
+            <span>box2</span>
+        </div>
+        <div class="box">
+            <span>box3</span>
+        </div>
+    </div>
+
+</body>
+</html>
