@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>업다운 게임</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main>
+        <h2 style="color: rgb(12, 12, 12);">업다운 게임</h2>
+
+        <div class="control">
+            <label for="user-input">0 ~ 100 사이의 숫자를 입력하세요!</label>
+            <div class="input-group">
+                <input type="text" name="user-input" id="user-input" placeholder="숫자 입력" autocomplete="off" autofocus>
+                <button class="submit" type="button">...인가요?</button>
+            </div>
+        </div>
+        <div class="result">
+            <h2 id="status"></h2>
+            <h4 id="left-count"></h4>
+            <button class="replay" onclick="location.reload()" hidden>다시하기</button>
+        </div>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>

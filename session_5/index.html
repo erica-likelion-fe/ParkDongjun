@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>카운터</h3>
+    <h4>count: <span id="countSpan">0</span></h4>
+    <div>
+        <button id="plusBt">+</button>
+        <button id="minusBt">-</button>
+    </div>
+</body>
+<script>
+    /*
+
+    function getName(cb) {
+        setTimeout(() => {
+            cb('Park')
+        }, 2000);
+    }
+
+    function getAge(cb) {
+        setTimeout(() => {
+            cb(20)
+        }, 2000)
+    }
+
+    function getAddress(cb) {
+        setTimeout(() => {
+            cb('Ansan')
+        }, 2000);
+    }
+
+    getName((name) => {
+        getAge((age) => {
+            getAddress((address) => {
+                console.log(name, age, address)
+            })
+        })
+    })
+
+    */
+
+
+    const plusBt = document.getElementById('plusBt');
+    const minusBt = document.getElementById('minusBt');
+    const countSpan = document.getElementById('countSpan');
+    let count = Number(countSpan.innerText);
+
+    plusBt.addEventListener('click', ()=>{
+        count++;
+        countSpan.innerHTML = count;
+    });
+
+    
+
+    minusBt.addEventListener('click', ()=>{
+        count--;
+        countSpan.innerHTML = count;
+    });
+    
+</script>
+</html>

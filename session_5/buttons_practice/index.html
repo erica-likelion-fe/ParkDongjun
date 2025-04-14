@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .box {
+            border: 2px solid;
+            border-radius: 12px;
+            border-color: #7c7b7b;
+            align-items: center;
+            width: 500px;
+        }
+
+        .buttons {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            padding: 20px 40px;
+            border-radius: 12px;
+        }
+
+        .food {
+            width: 400px;
+            height: 70px;
+            font-size: 24px;
+            border: none;
+            border-radius: 10px;
+            background-color: #f3c494;
+            color: white;
+            transition: background-color .3s;
+        }
+        
+        .submit {
+            width: 400px;
+            height: 70px;
+            font-size: 24px;
+            border: none;
+            border-radius: 10px;
+            background-color: #f3c494;
+            color: white;
+            margin-top: 30px;
+            transition: background-color .3s;
+        }
+
+        .selected {
+            background-color: #F08315; 
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>음식 선택:</h1>
+        <div class="buttons">
+            <button class="food">김밥</button>
+            <button class="food">라면</button>
+            <button class="food">만두</button>
+            <button class="food">쫄면</button>
+            <button class="food">우동</button>
+            <button class="submit">제출</button>
+        </div>
+    </div>
+</body>
+<script>
+
+const foodBtns = document.querySelectorAll('.food');
+const submitBtn = document.querySelector('.submit');
+
+submitBtn.disabled = true;
+
+foodBtns.forEach(btn => {
+    btn.addEventListener('click', ()=> {
+        btn.classList.toggle('selected');
+        updateSubmit();
+    })
+});
+
+function updateSubmit() {
+    const selected = document.querySelectorAll('.food.selected');
+    const isActive = selected.length > 0;    
+
+    submitBtn.disabled = !isActive;
+    submitBtn.classList.toggle('selected', isActive);
+}
+
+submitBtn.addEventListener('click', () => {
+    const selected = document.querySelectorAll('.food.selected');
+    console.log('선택한 음식:', Array.from(selected).map(b => b.innerText))
+})
+
+</script>
+</html>
