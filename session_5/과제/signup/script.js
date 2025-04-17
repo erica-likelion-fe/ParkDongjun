@@ -24,12 +24,12 @@ form.addEventListener('submit', (e) => {
         pass = false;
     }
 
-    // 비밀번호 검증 (최소 8자, 숫자 영문 조합)
-    else if (pw.value.length < 8) {
+    // 비밀번호 검증 (최소 6자, !, *, %, $, #, @, ? 문자 포함)
+    else if (pw.value.length < 6) {
         alert('비밀번호는 최소 8자 이상이어야 합니다.');
         pass = false;
-    } else if (!/[0-9]/.test(pw.value) || !/[a-zA-Z]/.test(pw.value)) {
-        alert('비밀번호는 숫자와 영문자를 조합해야 합니다.');
+    } else if (!/[!@#$%^&*]/.test(pw.value)) {
+        alert('비밀번호는 특수문자를 포함해야 합니다.');
         pass = false;
     }
 

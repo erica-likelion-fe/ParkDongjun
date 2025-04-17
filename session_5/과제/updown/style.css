@@ -38,7 +38,7 @@ label {
     margin-bottom: 20px;
 }
 
-input[type="text"] {
+input[type="number"] {
     padding: 8pt;
     border: none;
     border-radius: 10px;
