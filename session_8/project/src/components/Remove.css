@@ -1,0 +1,16 @@
+.remove-row {
+    display: flex;
+    width: 100%;
+    gap: 8px;
+  }
+  
+  .remove-row input[type="text"] {
+    flex: 1;
+  }
+  
+  .remove-row button.remove {
+    margin: 5px 0;
+    width: 80px;
+    background-color: #dc3545;
+    color: white;
+  }
