@@ -1,0 +1,93 @@
+.posting-container {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 32px 24px;
+  background: #fff;
+}
+
+.posting-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.label {
+  font-family: inherit;
+  font-size: 1.06rem;
+  font-weight: 500;
+  margin-top: 40px;
+  color: #222;
+}
+
+.img-dropzone {
+  border: 1px solid #212121;
+  text-align: center;
+  height: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-bottom: 9px;
+}
+
+.preview-img {
+  max-width: 100%;
+  max-height: 110px;
+  border-radius: 5px;
+}
+
+.upload-btn {
+  padding: 9px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-family: inherit;
+  width: 120px;
+}
+
+.upload-btn:hover {
+  background: #000000;
+  color: #ffffff;
+}
+
+.input,
+.textarea {
+  width: 100%;
+  box-sizing: border-box; 
+  border: 1px solid #212121;
+  padding: 12px;
+  font-size: 1rem;
+  font-family: inherit;
+  margin-bottom: 4px;
+  resize: none;
+}
+
+.textarea {
+  min-height: 70px;
+}
+
+.form-footer {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.submit-btn {
+  font-size: 1rem;
+  padding: 10px 28px;
+  margin-top: 40px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background: #000000;
+  color: #ffffff;
+}
+
+.submit-btn:disabled {
+  color: #a2a2a2;
+  cursor: not-allowed;
+}
+
+.submit-btn:disabled:hover {
+  background: #ffffff;
+  color: #a2a2a2;
+}
